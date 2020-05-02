@@ -22,7 +22,7 @@ export default function Track({ track }) {
             to={`lyrics/track/${track.track_id}`}
             className="btn btn-dark btn-block"
           >
-            <i className="fas fa-chevron-right"></i> View Lyrics
+            <i className="fas fa-eye"></i> View Lyrics
           </Link>
         </div>
       </div>
