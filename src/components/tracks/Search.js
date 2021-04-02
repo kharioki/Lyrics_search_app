@@ -15,7 +15,8 @@ export default function Search() {
 
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${trackTitle}&apikey=${process.env.REACT_APP_MM_KEY}`
+        `https://api.musixmatch.com/ws/1.1/track.search?q_track=${trackTitle}&apikey=${process.env.REACT_APP_MM_KEY}`
+        // `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${trackTitle}&apikey=${process.env.REACT_APP_MM_KEY}`
       )
       .then(({ data }) => {
         dispatch({
